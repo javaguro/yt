@@ -4,9 +4,8 @@ type RedButtonProps = {
   image: string;
   text: string;
   link: string;
-  size: "large" | "small";
 };
-const RedButton = ({ image, text, link, size }: RedButtonProps) => {
+const RedButton = ({ image, text, link }: RedButtonProps) => {
   return (
     <a className={styles.red_button} href={link}>
       <img className={styles.image} src={image} alt={text} />
